@@ -11,7 +11,7 @@ struct HomePage: View {
     @State private var showAlert = false
     
     func emergencyCall() -> Void {
-        let phoneNumber = "403-315-7040"
+        let phoneNumber = "408-315-7040"
         let phone = "tel://"
         let phoneNumberformatted = phone + phoneNumber
         guard let url = URL(string: phoneNumberformatted) else { return }
@@ -122,30 +122,7 @@ struct HomePage: View {
                 
                 Spacer()
                 
-                Rectangle()
-                    .fill(Color.card)
-                    .frame(height: 72)
-                    .cornerRadius(16.0)
-                    .overlay(
-                        HStack {
-                            Text("A")
-                                .foregroundColor(Color.txt)
-                            Spacer()
-                            Text("B")
-                                .foregroundColor(Color.txt)
-                            Spacer()
-                            Text("C")
-                                .foregroundColor(Color.txt)
-                            Spacer()
-                            Text("D")
-                                .foregroundColor(Color.txt)
-                            Spacer()
-                            Text("E")
-                                .foregroundColor(Color.txt)
-                        }
-                            .padding(32)
-                    )
-                    .padding([.horizontal], 32)
+//                ScrumsView()
             }
         }
         .background(Color.bg)
