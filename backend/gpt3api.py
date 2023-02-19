@@ -1,7 +1,7 @@
 import openai
 
 def search(text):
-    apiKey = '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'
+    apiKey = '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'
 
     openai.api_key = apiKey
 

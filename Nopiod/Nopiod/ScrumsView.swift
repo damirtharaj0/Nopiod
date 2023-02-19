@@ -17,17 +17,12 @@ struct ScrumsView: View {
                 }
                 .navigationBarHidden(true)
             
-            Text("Current Workout")
+            MapView()
                 .tabItem {
                     Label("", systemImage: "list.dash")
                 }
             
-//            MapView(locationManager: .constant(CLLocationManager()), showMapAlert: .constant(true))
-//            MapView(location: CLLocationCoordinate2D(latitude: 37.34979956373458, longitude: -121.93898750218749)
-                MapView()
-                .tabItem {
-                    Label("", systemImage: "list.dash")
-                }
+            ChatBot()
                 .tabItem {
                     Label("", systemImage: "list.dash")
                 }

@@ -11,7 +11,7 @@ import SwiftUI
 struct NopiodApp: App {
     var body: some Scene {
         WindowGroup {
-            MapView()
+            ScrumsView()
         }
     }
 }
