@@ -5,6 +5,7 @@
 //  Created by Akhil M on 2/18/23.
 //
 import SwiftUI
+import CoreLocation
 
 struct ScrumsView: View {
     
@@ -21,7 +22,9 @@ struct ScrumsView: View {
                     Label("", systemImage: "list.dash")
                 }
             
-            Text("My Workouts")
+//            MapView(locationManager: .constant(CLLocationManager()), showMapAlert: .constant(true))
+//            MapView(location: CLLocationCoordinate2D(latitude: 37.34979956373458, longitude: -121.93898750218749)
+                MapView()
                 .tabItem {
                     Label("", systemImage: "list.dash")
                 }
