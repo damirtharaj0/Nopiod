@@ -254,8 +254,3 @@ extension MapView {
         locationDataManager.locationManager.startUpdatingLocation()
     }
 }
-
-//class MapPins:
-
-=======
->>>>>>> backend1

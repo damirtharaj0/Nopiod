@@ -77,16 +77,12 @@ struct HomePage: View {
                                 .overlay(
                                     Rectangle()
                                         .fill(Color.card)
-                                        .frame(width: 104, height: 72)
                                         .cornerRadius(16.0)
-                                        .shadow(color: .red, radius: 2, x: 0, y: 0)
                                         .overlay(
-                                            Text("SOS")
-                                                .foregroundColor(.red)
+                                            GifImage("sos")
                                         )
-                                    //                                            .padding(.trailing)
                                 )
-                                .frame(width: 150, height: 110)
+                                .frame(width: 150, height: 200)
                                 .foregroundColor(Color.bg)
                                 .cornerRadius(16)
                                 .shadow(color: Color.bg, radius: 8, x: 0, y: 0)
