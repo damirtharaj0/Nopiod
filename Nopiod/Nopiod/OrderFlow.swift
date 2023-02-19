@@ -35,6 +35,7 @@ struct OrderFlow : View {
                 Color.bg
                 VStack {
                     Text("Please login to request a free narcan kit")
+                        .font(.system(size: 15))
                         .foregroundColor(Color.txt)
                         .fontWeight(.bold)
                         .padding()

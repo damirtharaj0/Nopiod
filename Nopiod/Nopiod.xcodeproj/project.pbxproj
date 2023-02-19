@@ -71,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				30A4FBD729A2408900B092B3 /* Info.plist */,
+				30A4FBDB29A2472200B092B3 /* Auth0.plist */,
 				30136C3929A171FE0043800A /* Preview Content */,
 				30136C3729A171FE0043800A /* Assets.xcassets */,
 				30A4FBD129A20BF300B092B3 /* sos.gif */,
@@ -82,7 +83,6 @@
 				30CAD83F29A1E12600EC621B /* ChatBot.swift */,
 				30A4FBCF29A20AE400B092B3 /* GifImage.swift */,
 				3003FBD929A230C100F5099F /* OrderFlow.swift */,
-				30A4FBDB29A2472200B092B3 /* Auth0.plist */,
 			);
 			path = Nopiod;
 			sourceTree = "<group>";

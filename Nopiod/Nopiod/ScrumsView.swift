@@ -13,22 +13,22 @@ struct ScrumsView: View {
         TabView {
             HomePage()
                 .tabItem {
-                    Label("", systemImage: "list.dash")
+                    Label("", systemImage: "house")
                 }
             
             MapView()
                 .tabItem {
-                    Label("", systemImage: "list.dash")
+                    Label("", systemImage: "map")
                 }
             
             ChatBot()
                 .tabItem {
-                    Label("", systemImage: "list.dash")
+                    Label("", systemImage: "message")
                 }
             
             OrderFlow()
                 .tabItem {
-                    Label("", systemImage: "list.dash")
+                    Label("", systemImage: "doc.plaintext")
                 }
         }
         
