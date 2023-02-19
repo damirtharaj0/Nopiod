@@ -3,7 +3,7 @@
 //  Nopiod
 //
 //  Created by Akhil M on 2/18/23.
-//
+
 
 import SwiftUI
 import MapKit
@@ -30,31 +30,12 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
         location = locations.first?.coordinate
     }
 }
-//
-//struct Marker: Identifiable {
-//  let id = UUID()
-//  var location: MapPin
-//}
-//
 
 struct MapView: View {
     @State private var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 37.34979956373458, longitude: -121.93898750218749),
         span: MKCoordinateSpan(latitudeDelta: 0.15, longitudeDelta: 0.15)
     )
-    
-    //
-    //    @State var location: CLLocationCoordinate2D
-    //    @State private var mapRegion: MKCoordinateRegion
-    //    @State private var trackingMode = MapUserTrackingMode.follow
-    //    let markers: [Marker]
-    //
-    //    init(location: CLLocationCoordinate2D) {
-    //      _location = State(initialValue: location)
-    //      _mapRegion = State(initialValue: MKCoordinateRegion(center: location, span: MKCoordinateSpan(latitudeDelta: 0.00625, longitudeDelta: 0.00625)))
-    //      markers = [Marker(location: MapPin(coordinate: location))]
-    //    }
-    //
     
     var body: some View {
         VStack {
@@ -64,8 +45,6 @@ struct MapView: View {
                 .overlay(
                     VStack {
                         Map(coordinateRegion: $region).cornerRadius(16.0)
-                        //                        .padding()
-                        //                        .padding([.vertical], 16)
                     }
                 ).padding([.vertical], 16)
             
@@ -77,15 +56,7 @@ struct MapView: View {
                 .cornerRadius(16.0)
                 .overlay(
                     VStack {
-                        //                        MapUserTrackingMode.follow
-                        //                        Map(
-                        //                              coordinateRegion: $mapRegion,
-                        //                              showsUserLocation: true,
-                        //                              userTrackingMode: $trackingMode,
-                        //                              annotationItems: markers) { marker in
-                        //                                marker.location
-                        //                              }
-                        //                              .edgesIgnoringSafeArea(.bottom)
+                        
                     }
                 )
             
@@ -139,3 +110,5 @@ extension MapView {
 
 //class MapPins:
 
+=======
+>>>>>>> backend1
