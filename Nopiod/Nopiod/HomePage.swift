@@ -144,7 +144,7 @@ struct HomePage: View {
                         .padding()
                         .padding([.vertical], 16)
                 )
-                .padding(32)
+                .padding(16)
             
             Spacer()
             

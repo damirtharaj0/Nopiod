@@ -26,13 +26,10 @@ struct ScrumsView: View {
                     Label("", systemImage: "list.dash")
                 }
             
-//            MapView(locationManager: .constant(CLLocationManager()), showMapAlert: .constant(true))
-//            MapView(location: CLLocationCoordinate2D(latitude: 37.34979956373458, longitude: -121.93898750218749)
-                MapView()
+            ChatBot()
                 .tabItem {
                     Label("", systemImage: "list.dash")
                 }
-                .navigationBarHidden(true)
         }
     }
     
