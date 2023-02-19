@@ -17,7 +17,7 @@ struct ScrumsView: View {
                 }
                 .navigationBarHidden(true)
             
-            OrderPage()
+            OrderFlow()
                 .tabItem {
                     Label("", systemImage: "list.dash")
                 }

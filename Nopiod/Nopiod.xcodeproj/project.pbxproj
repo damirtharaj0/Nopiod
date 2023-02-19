@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3003FBDA29A230C100F5099F /* OrderFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003FBD929A230C100F5099F /* OrderFlow.swift */; };
 		30136C3429A171FC0043800A /* NopiodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30136C3329A171FC0043800A /* NopiodApp.swift */; };
 		30136C3829A171FE0043800A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30136C3729A171FE0043800A /* Assets.xcassets */; };
 		30136C3B29A171FE0043800A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30136C3A29A171FE0043800A /* Preview Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3003FBD929A230C100F5099F /* OrderFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderFlow.swift; sourceTree = "<group>"; };
 		30136C3029A171FC0043800A /* Nopiod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nopiod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30136C3329A171FC0043800A /* NopiodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NopiodApp.swift; sourceTree = "<group>"; };
 		30136C3729A171FE0043800A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,8 +69,8 @@
 				30136C4329A172FF0043800A /* Color.swift */,
 				30FAA52229A18B8F00EE3AE8 /* ScrumsView.swift */,
 				30FAA52429A18D8E00EE3AE8 /* MapView.swift */,
-				3039F13D29A1FA2B00D45028 /* OrderPage.swift */,
 				30136C3729A171FE0043800A /* Assets.xcassets */,
+				3003FBD929A230C100F5099F /* OrderFlow.swift */,
 				30136C3929A171FE0043800A /* Preview Content */,
 				30136C4129A172CF0043800A /* HomePage.swift */,
 				30CAD83F29A1E12600EC621B /* ChatBot.swift */,
@@ -157,13 +159,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3039F13E29A1FA2B00D45028 /* OrderPage.swift in Sources */,
 				30FAA52529A18D8E00EE3AE8 /* MapView.swift in Sources */,
 				30CAD84029A1E12600EC621B /* ChatBot.swift in Sources */,
 				30FAA52329A18B8F00EE3AE8 /* ScrumsView.swift in Sources */,
 				30A4FBD029A20AE400B092B3 /* GifImage.swift in Sources */,
 				30136C4429A172FF0043800A /* Color.swift in Sources */,
 				30136C4229A172CF0043800A /* HomePage.swift in Sources */,
+				3003FBDA29A230C100F5099F /* OrderFlow.swift in Sources */,
 				30136C3429A171FC0043800A /* NopiodApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
