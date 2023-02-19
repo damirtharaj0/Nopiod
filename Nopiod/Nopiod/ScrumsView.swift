@@ -17,6 +17,10 @@ struct ScrumsView: View {
                 }
                 .navigationBarHidden(true)
             
+            OrderPage()
+                .tabItem {
+                    Label("", systemImage: "list.dash")
+                }
             Text("Current Workout")
                 .tabItem {
                     Label("", systemImage: "list.dash")
