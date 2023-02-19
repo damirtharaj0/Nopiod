@@ -12,6 +12,8 @@
 		30136C3B29A171FE0043800A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30136C3A29A171FE0043800A /* Preview Assets.xcassets */; };
 		30136C4229A172CF0043800A /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30136C4129A172CF0043800A /* HomePage.swift */; };
 		30136C4429A172FF0043800A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30136C4329A172FF0043800A /* Color.swift */; };
+		30A4FBD029A20AE400B092B3 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A4FBCF29A20AE400B092B3 /* GifImage.swift */; };
+		30A4FBD229A20BF300B092B3 /* sos.gif in Resources */ = {isa = PBXBuildFile; fileRef = 30A4FBD129A20BF300B092B3 /* sos.gif */; };
 		30CAD84029A1E12600EC621B /* ChatBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CAD83F29A1E12600EC621B /* ChatBot.swift */; };
 		30FAA52329A18B8F00EE3AE8 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAA52229A18B8F00EE3AE8 /* ScrumsView.swift */; };
 		30FAA52529A18D8E00EE3AE8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAA52429A18D8E00EE3AE8 /* MapView.swift */; };
@@ -24,6 +26,8 @@
 		30136C3A29A171FE0043800A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		30136C4129A172CF0043800A /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		30136C4329A172FF0043800A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		30A4FBCF29A20AE400B092B3 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
+		30A4FBD129A20BF300B092B3 /* sos.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sos.gif; sourceTree = "<group>"; };
 		30CAD83F29A1E12600EC621B /* ChatBot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBot.swift; sourceTree = "<group>"; };
 		30FAA52229A18B8F00EE3AE8 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		30FAA52429A18D8E00EE3AE8 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -62,13 +66,14 @@
 				30136C3329A171FC0043800A /* NopiodApp.swift */,
 				30136C4329A172FF0043800A /* Color.swift */,
 				30FAA52229A18B8F00EE3AE8 /* ScrumsView.swift */,
-				30136C4129A172CF0043800A /* HomePage.swift */,
 				30FAA52429A18D8E00EE3AE8 /* MapView.swift */,
 				3039F13D29A1FA2B00D45028 /* OrderPage.swift */,
 				30136C3729A171FE0043800A /* Assets.xcassets */,
 				30136C3929A171FE0043800A /* Preview Content */,
 				30136C4129A172CF0043800A /* HomePage.swift */,
 				30CAD83F29A1E12600EC621B /* ChatBot.swift */,
+				30A4FBCF29A20AE400B092B3 /* GifImage.swift */,
+				30A4FBD129A20BF300B092B3 /* sos.gif */,
 			);
 			path = Nopiod;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30A4FBD229A20BF300B092B3 /* sos.gif in Resources */,
 				30136C3B29A171FE0043800A /* Preview Assets.xcassets in Resources */,
 				30136C3829A171FE0043800A /* Assets.xcassets in Resources */,
 			);
@@ -155,6 +161,7 @@
 				30FAA52529A18D8E00EE3AE8 /* MapView.swift in Sources */,
 				30CAD84029A1E12600EC621B /* ChatBot.swift in Sources */,
 				30FAA52329A18B8F00EE3AE8 /* ScrumsView.swift in Sources */,
+				30A4FBD029A20AE400B092B3 /* GifImage.swift in Sources */,
 				30136C4429A172FF0043800A /* Color.swift in Sources */,
 				30136C4229A172CF0043800A /* HomePage.swift in Sources */,
 				30136C3429A171FC0043800A /* NopiodApp.swift in Sources */,
