@@ -45,32 +45,17 @@ struct MapView: View {
         span: MKCoordinateSpan(latitudeDelta: 0.15, longitudeDelta: 0.15)
     )
     
-    //
-    //    @State var location: CLLocationCoordinate2D
-    //    @State private var mapRegion: MKCoordinateRegion
-    //    @State private var trackingMode = MapUserTrackingMode.follow
-    //    let markers: [Marker]
-    //
-    //    init(location: CLLocationCoordinate2D) {
-    //      _location = State(initialValue: location)
-    //      _mapRegion = State(initialValue: MKCoordinateRegion(center: location, span: MKCoordinateSpan(latitudeDelta: 0.00625, longitudeDelta: 0.00625)))
-    //      markers = [Marker(location: MapPin(coordinate: location))]
-    //    }
-    //
-    
     @State private var showAlert = false
     
     var annotationItems: [MyAnnotationItem] = [
             MyAnnotationItem(coordinate: CLLocationCoordinate2D(latitude: 37.35003759695697, longitude: -121.9406019868026)),
             MyAnnotationItem(coordinate: CLLocationCoordinate2D(latitude: 37.3353665203413, longitude: -121.88103931563867 )),
         ]
-//    37.35003759695697, -121.9406019868026 SCU
-//    37.3353665203413, -121.88103931563867 SJSU
+    
     var body: some View {
         
         VStack {
             
-//
             HStack {
                 Text("Narcan Locations:")
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -97,7 +82,7 @@ struct MapView: View {
                         primaryButton: .default(
                             Text("Ok"),
                             action: {
-//                                emergencyCall()
+                                
                             }
                         ),
                         secondaryButton: .destructive(
@@ -111,7 +96,6 @@ struct MapView: View {
             }
             .padding()
             
-//
             Rectangle()
                 .fill(Color.card)
                 .cornerRadius(16.0)
@@ -123,10 +107,7 @@ struct MapView: View {
                                             MapPin(coordinate: item.coordinate)
                         }.cornerRadius(16.0)
                     }
-                ).padding([.horizontal],16)
-            
-            
-            //            Spacer()
+                )
             
             Rectangle()
                 .fill(Color.card)
@@ -145,8 +126,6 @@ struct MapView: View {
                                         .foregroundColor(Color.txt)
                                     Spacer()
                                 }
-//                                    Text("500 El Camino Real, Santa Clara, CA 95050")
-//                                        .foregroundColor(Color.txt)
                             }
                             Spacer()
                             Button {
@@ -202,14 +181,14 @@ struct MapView: View {
                                         }
                                     )
                             }
-                        }.padding()
+                        }
+                        .padding()
                         Spacer()
-                        
                     }.cornerRadius(16.0)
                 )
-                .padding(16)
             
         }
+        .padding()
         .background(Color.bg)
     }
 }

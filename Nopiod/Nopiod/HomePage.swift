@@ -140,11 +140,11 @@ struct HomePage: View {
                         .padding()
                         .padding([.vertical], 16)
                 )
-                .padding(16)
             
             Spacer()
             
         }
+        .padding()
         .background(Color.bg)
     }
 }

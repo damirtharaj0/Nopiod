@@ -15,13 +15,8 @@ struct ScrumsView: View {
                 .tabItem {
                     Label("", systemImage: "list.dash")
                 }
-                .navigationBarHidden(true)
             
-            OrderFlow()
-                .tabItem {
-                    Label("", systemImage: "list.dash")
-                }
-            Text("Current Workout")
+            MapView()
                 .tabItem {
                     Label("", systemImage: "list.dash")
                 }
@@ -30,7 +25,13 @@ struct ScrumsView: View {
                 .tabItem {
                     Label("", systemImage: "list.dash")
                 }
+            
+            OrderFlow()
+                .tabItem {
+                    Label("", systemImage: "list.dash")
+                }
         }
+        
     }
     
 }

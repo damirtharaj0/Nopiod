@@ -29,37 +29,37 @@ struct ChatBot: View {
     }
     
     // rest api login call
-        private func search() {
-            
-            // define response structs
-            struct Response: Codable {
-                let result: String
-            }
-            
-            let components = textInput.components(separatedBy: " ")
-            
-            var rsp = ""
-            for wrd in components {
-                rsp += wrd
-                rsp += "+"
-            }
-            
-            // create request
-            var request = URLRequest(url: URL(string: "http://127.0.0.1:5000/search?text=" + rsp)!)
-            request.httpMethod = "GET"
-            
-            // perform request
-            URLSession.shared.dataTask(with: request) { (data, _, _) in
-                
-                // decode response into response struct
-                guard let response = try? JSONDecoder().decode(Response.self, from: data!) else {
-                    return
-                }
-                
-                chatResponse = response.result
-                
-            }.resume()
+    private func search() {
+        
+        // define response structs
+        struct Response: Codable {
+            let result: String
         }
+        
+        let components = textInput.components(separatedBy: " ")
+        
+        var rsp = ""
+        for wrd in components {
+            rsp += wrd
+            rsp += "+"
+        }
+        
+        // create request
+        var request = URLRequest(url: URL(string: "http://127.0.0.1:5000/search?text=" + rsp)!)
+        request.httpMethod = "GET"
+        
+        // perform request
+        URLSession.shared.dataTask(with: request) { (data, _, _) in
+            
+            // decode response into response structw
+            guard let response = try? JSONDecoder().decode(Response.self, from: data!) else {
+                return
+            }
+            
+            chatResponse = response.result
+            
+        }.resume()
+    }
     
     var body: some View {
         ZStack {
@@ -105,37 +105,42 @@ struct ChatBot: View {
                 
                 Rectangle()
                     .overlay(
-                        TextEditor(text: $textInput)
-                            .background(Color.card)
-                            .foregroundColor(Color.txt)
+                        VStack {
+                            TextEditor(text: $textInput)
+                                .frame(height: 300)
+                                .background(Color.card)
+                                .foregroundColor(Color.txt)
+                            
+                            Text(chatResponse)
+                                .foregroundColor(Color.blue)
+                            Spacer()
+                        }
                             .padding()
-                        
                     )
-                    .frame(height: 300)
                     .cornerRadius(16)
                     .foregroundColor(Color.card)
-                    .padding(.horizontal, 8)
                 
+                Spacer()
                 Button {
                     search()
                 } label: {
-                    Text("Submit")
+                    Rectangle()
+                        .fill(Color.card)
+                        .frame(width: 256, height: 64)
+                        .cornerRadius(16.0)
+                        .shadow(color: .blue, radius: 4, x: 0, y: 0)
+                        .overlay(
+                            Text("Submit")
+                                .foregroundColor(.white)
+                        )
                 }
-                Spacer()
+                .padding(.top)
                 
-                Rectangle()
-                    .overlay(
-                        Text(chatResponse)
-                            .foregroundColor(Color.txt)
-                            
-                    )
-                    .frame(height: 300)
-                    .cornerRadius(16)
-                    .foregroundColor(Color.card)
-                    .padding(.horizontal, 8)
             }
         }
+        .padding()
         .background(Color.bg)
+        
     }
 }
 
