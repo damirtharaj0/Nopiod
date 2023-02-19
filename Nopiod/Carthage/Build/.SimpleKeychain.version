@@ -1,0 +1,60 @@
+{
+  "Mac" : [
+    {
+      "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
+      "hash" : "c3e4b4df4cbeb9173ada34554bdec20a8ee130a30592037b24786498dd89f36f",
+      "name" : "SimpleKeychain",
+      "container" : "SimpleKeychain.xcframework",
+      "identifier" : "macos-arm64_x86_64"
+    }
+  ],
+  "watchOS" : [
+    {
+      "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
+      "hash" : "ef577900fb625aa56b2c7b0a12ef6d64cdb82d08c9e8b6bfeb835b5cb9884a7b",
+      "name" : "SimpleKeychain",
+      "container" : "SimpleKeychain.xcframework",
+      "identifier" : "watchos-arm64_32_armv7k"
+    },
+    {
+      "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
+      "hash" : "d708379b02742225deed1252cbe6b31cb16bfecb6ddbc16ff7450f2a264676aa",
+      "name" : "SimpleKeychain",
+      "container" : "SimpleKeychain.xcframework",
+      "identifier" : "watchos-arm64_i386_x86_64-simulator"
+    }
+  ],
+  "tvOS" : [
+    {
+      "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
+      "hash" : "0076dbc98c50b9909fc30120b77193bce264ed88651d55e518b5136a5a833914",
+      "name" : "SimpleKeychain",
+      "container" : "SimpleKeychain.xcframework",
+      "identifier" : "tvos-arm64"
+    },
+    {
+      "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
+      "hash" : "f88cf16b347e4eea7120e4cece09b1191ad39416997cff42f3f38fafcaf2a7f9",
+      "name" : "SimpleKeychain",
+      "container" : "SimpleKeychain.xcframework",
+      "identifier" : "tvos-arm64_x86_64-simulator"
+    }
+  ],
+  "commitish" : "1.0.1",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
+      "hash" : "f927f6de54bde1a0ca5eac3f92b89cc548f0c38dda5fb71fffad5f5db07720a6",
+      "name" : "SimpleKeychain",
+      "container" : "SimpleKeychain.xcframework",
+      "identifier" : "ios-arm64"
+    },
+    {
+      "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
+      "hash" : "9ebb63b6d517b4ba099647cc824ed1a6897f7ad6d754111586f35056a1f7a681",
+      "name" : "SimpleKeychain",
+      "container" : "SimpleKeychain.xcframework",
+      "identifier" : "ios-arm64_x86_64-simulator"
+    }
+  ]
+}

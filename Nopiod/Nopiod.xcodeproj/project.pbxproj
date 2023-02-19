@@ -15,6 +15,8 @@
 		30136C4429A172FF0043800A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30136C4329A172FF0043800A /* Color.swift */; };
 		30A4FBD029A20AE400B092B3 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A4FBCF29A20AE400B092B3 /* GifImage.swift */; };
 		30A4FBD229A20BF300B092B3 /* sos.gif in Resources */ = {isa = PBXBuildFile; fileRef = 30A4FBD129A20BF300B092B3 /* sos.gif */; };
+		30A4FBDA29A2414F00B092B3 /* Auth0 in Frameworks */ = {isa = PBXBuildFile; productRef = 30A4FBD929A2414F00B092B3 /* Auth0 */; };
+		30A4FBDC29A2472200B092B3 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30A4FBDB29A2472200B092B3 /* Auth0.plist */; };
 		30CAD84029A1E12600EC621B /* ChatBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CAD83F29A1E12600EC621B /* ChatBot.swift */; };
 		30FAA52329A18B8F00EE3AE8 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAA52229A18B8F00EE3AE8 /* ScrumsView.swift */; };
 		30FAA52529A18D8E00EE3AE8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAA52429A18D8E00EE3AE8 /* MapView.swift */; };
@@ -30,6 +32,8 @@
 		30136C4329A172FF0043800A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		30A4FBCF29A20AE400B092B3 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
 		30A4FBD129A20BF300B092B3 /* sos.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sos.gif; sourceTree = "<group>"; };
+		30A4FBD729A2408900B092B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		30A4FBDB29A2472200B092B3 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
 		30CAD83F29A1E12600EC621B /* ChatBot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBot.swift; sourceTree = "<group>"; };
 		30FAA52229A18B8F00EE3AE8 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		30FAA52429A18D8E00EE3AE8 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -40,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30A4FBDA29A2414F00B092B3 /* Auth0 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 		30136C3229A171FC0043800A /* Nopiod */ = {
 			isa = PBXGroup;
 			children = (
+				30A4FBD729A2408900B092B3 /* Info.plist */,
 				30136C3929A171FE0043800A /* Preview Content */,
 				30136C3729A171FE0043800A /* Assets.xcassets */,
 				30A4FBD129A20BF300B092B3 /* sos.gif */,
@@ -76,6 +82,7 @@
 				30CAD83F29A1E12600EC621B /* ChatBot.swift */,
 				30A4FBCF29A20AE400B092B3 /* GifImage.swift */,
 				3003FBD929A230C100F5099F /* OrderFlow.swift */,
+				30A4FBDB29A2472200B092B3 /* Auth0.plist */,
 			);
 			path = Nopiod;
 			sourceTree = "<group>";
@@ -104,6 +111,9 @@
 			dependencies = (
 			);
 			name = Nopiod;
+			packageProductDependencies = (
+				30A4FBD929A2414F00B092B3 /* Auth0 */,
+			);
 			productName = Nopiod;
 			productReference = 30136C3029A171FC0043800A /* Nopiod.app */;
 			productType = "com.apple.product-type.application";
@@ -132,6 +142,9 @@
 				Base,
 			);
 			mainGroup = 30136C2729A171FC0043800A;
+			packageReferences = (
+				30A4FBD829A2414F00B092B3 /* XCRemoteSwiftPackageReference "Auth0" */,
+			);
 			productRefGroup = 30136C3129A171FC0043800A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -149,6 +162,7 @@
 				30A4FBD229A20BF300B092B3 /* sos.gif in Resources */,
 				30136C3B29A171FE0043800A /* Preview Assets.xcassets in Resources */,
 				30136C3829A171FE0043800A /* Assets.xcassets in Resources */,
+				30A4FBDC29A2472200B092B3 /* Auth0.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,9 +309,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nopiod/Preview Content\"";
-				DEVELOPMENT_TEAM = DQJ9FX3D22;
+				DEVELOPMENT_TEAM = 9QWJZJP297;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nopiod/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -308,7 +323,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sauceque;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sauceque4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -324,9 +339,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nopiod/Preview Content\"";
-				DEVELOPMENT_TEAM = DQJ9FX3D22;
+				DEVELOPMENT_TEAM = 9QWJZJP297;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nopiod/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -337,7 +353,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sauceque;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sauceque4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -367,6 +383,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		30A4FBD829A2414F00B092B3 /* XCRemoteSwiftPackageReference "Auth0" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/auth0/Auth0.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		30A4FBD929A2414F00B092B3 /* Auth0 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30A4FBD829A2414F00B092B3 /* XCRemoteSwiftPackageReference "Auth0" */;
+			productName = Auth0;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 30136C2829A171FC0043800A /* Project object */;
 }

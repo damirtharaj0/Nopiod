@@ -1,0 +1,60 @@
+{
+  "Mac" : [
+    {
+      "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
+      "hash" : "3fbb57672ce37019281f7471d8dbf644ef59d245b3413586960e31507f3db4f3",
+      "name" : "JWTDecode",
+      "container" : "JWTDecode.xcframework",
+      "identifier" : "macos-arm64_x86_64"
+    }
+  ],
+  "watchOS" : [
+    {
+      "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
+      "hash" : "f2afb5ed14ad11a57b0f1946b17b94a73ef57a7b4210fa6ee2133954d191d54f",
+      "name" : "JWTDecode",
+      "container" : "JWTDecode.xcframework",
+      "identifier" : "watchos-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
+      "hash" : "28f8ff81cfa424805c1362657ebe9b11b5314316ab5e6eda15488c7bb9661b90",
+      "name" : "JWTDecode",
+      "container" : "JWTDecode.xcframework",
+      "identifier" : "watchos-arm64_32_armv7k"
+    }
+  ],
+  "tvOS" : [
+    {
+      "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
+      "hash" : "eea534d4af636fc9a245077aaa1e72eb01d4f42c092685676c730b4f1cee79a9",
+      "name" : "JWTDecode",
+      "container" : "JWTDecode.xcframework",
+      "identifier" : "tvos-arm64_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
+      "hash" : "1a5ea3a6b5c30570c3b7502b3f83f60c2b805ccb29f20a1381709caf0ae09d93",
+      "name" : "JWTDecode",
+      "container" : "JWTDecode.xcframework",
+      "identifier" : "tvos-arm64"
+    }
+  ],
+  "commitish" : "3.0.1",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
+      "hash" : "5cb0f50f845ce63da8c486d4f55fa5e5c3bc6f467b3da684393b9f7ef72ac686",
+      "name" : "JWTDecode",
+      "container" : "JWTDecode.xcframework",
+      "identifier" : "ios-arm64"
+    },
+    {
+      "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
+      "hash" : "1c38cf936b37d629e0d59ba3b54e831d2409d7f506d04922b3f57ed07bcf85b4",
+      "name" : "JWTDecode",
+      "container" : "JWTDecode.xcframework",
+      "identifier" : "ios-arm64_x86_64-simulator"
+    }
+  ]
+}
