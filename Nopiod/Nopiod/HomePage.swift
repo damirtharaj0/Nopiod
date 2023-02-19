@@ -20,110 +20,134 @@ struct HomePage: View {
     }
     
     var body: some View {
-        ZStack {
-            VStack {
-                // Overdose title
-                HStack {
-                    Text("Someone Overdosing?")
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .foregroundColor(Color.white)
-                        .font(Font.largeTitle.weight(.bold))
-                    
-                    Button {
-                        showAlert = true
-                    } label: {
-                        Rectangle()
-                            .fill(Color.card)
-                            .frame(width: 104, height: 72)
-                            .cornerRadius(16.0)
-                            .shadow(color: .red, radius: 8, x: 0, y: 0)
-                            .overlay(
-                                Text("SOS")
-                                    .foregroundColor(.red)
-                            )
-                            .padding(.trailing)
-                    }
-                    .alert(isPresented: $showAlert) {
-                        Alert(
-                            title: Text("Emergency Call"),
-                            primaryButton: .default(
-                                Text("Ok"),
-                                action: {
-                                    emergencyCall()
-                                }
-                            ),
-                            secondaryButton: .destructive(
-                                Text("Cancel"),
-                                action: {
-                                    print("Cancel")
-                                }
-                            )
+        VStack {
+            // Overdose title
+            HStack {
+                Text("Someone Overdosing?")
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .foregroundColor(Color.white)
+                    .font(Font.largeTitle.weight(.bold))
+                
+                Button {
+                    showAlert = true
+                } label: {
+                    Rectangle()
+                        .fill(Color.card)
+                        .frame(width: 104, height: 72)
+                        .cornerRadius(16.0)
+                        .shadow(color: .red, radius: 4, x: 0, y: 0)
+                        .overlay(
+                            Text("SOS")
+                                .foregroundColor(.red)
                         )
-                    }
+                        .padding(.trailing)
                 }
-                .padding()
-                
-                Spacer()
-                
-                
-                Rectangle()
-                    .fill(Color.card)
-                    .cornerRadius(16.0)
-                    .overlay(
-                        VStack {
-                            Spacer()
-                            HStack {
-                                Spacer()
-                                Rectangle()
-                                    .fill(Color.card)
-                                    .frame(width: 104, height: 72)
-                                    .cornerRadius(16.0)
-                                    .shadow(color: .red, radius: 8, x: 0, y: 0)
-                                    .overlay(
-                                        Text("SOS")
-                                            .foregroundColor(.red)
-                                    )
-                                    .padding(.trailing)
-                                Spacer()
-                                Text("Call 911")
-                                    .foregroundColor(Color.txt)
-                                Spacer()
-                                
+                .alert(isPresented: $showAlert) {
+                    Alert(
+                        title: Text("Emergency Call"),
+                        primaryButton: .default(
+                            Text("Ok"),
+                            action: {
+                                emergencyCall()
                             }
-                            Spacer()
-                            HStack {
-                                Spacer()
-                                Text("Monitor vital signs")
-                                    .foregroundColor(Color.txt)
-                                Spacer()
-                                Rectangle()
-                                    .frame(width: 100, height: 60)
-                                    .foregroundColor(.card)
-                                Spacer()
+                        ),
+                        secondaryButton: .destructive(
+                            Text("Cancel"),
+                            action: {
+                                print("Cancel")
                             }
+                        )
+                    )
+                }
+            }
+            .padding()
+            
+            Spacer()
+            
+            
+            Rectangle()
+                .fill(Color.card)
+                .cornerRadius(16.0)
+                .overlay(
+                    VStack {
+                        Spacer()
+                        HStack {
                             Spacer()
-                            HStack {
-                                Spacer()
-                                GifImage("narcan")
-                                    .frame(width: 160, height: 120)
-                                    .cornerRadius(16)
-                                Spacer()
-                                Text("Administer narcan")
-                                    .foregroundColor(Color.txt)
-                                    .multilineTextAlignment(.center)
-                                Spacer()
-                            }
+                            Rectangle()
+                                .overlay(
+                                    Rectangle()
+                                        .fill(Color.card)
+                                        .frame(width: 104, height: 72)
+                                        .cornerRadius(16.0)
+                                        .shadow(color: .red, radius: 2, x: 0, y: 0)
+                                        .overlay(
+                                            Text("SOS")
+                                                .foregroundColor(.red)
+                                        )
+                                    //                                            .padding(.trailing)
+                                )
+                                .frame(width: 150, height: 110)
+                                .foregroundColor(Color.bg)
+                                .cornerRadius(16)
+                                .shadow(color: Color.bg, radius: 8, x: 0, y: 0)
+                            
+                            Spacer()
+                            Text("Call 911")
+                                .foregroundColor(Color.txt)
+                            Spacer()
+                            
+                        }
+                        Spacer()
+                        HStack {
+                            Spacer()
+                            Text("Monitor vital signs")
+                                .foregroundColor(Color.txt)
+                            Spacer()
+                            Rectangle()
+                                .overlay(
+                                    Image("pulse")
+                                        .resizable()
+                                        .frame(width: 120, height: 50)
+                                )
+                                .cornerRadius(16)
+                                .frame(width: 140, height: 100)
+                                .foregroundColor(Color.bg)
+                                .shadow(color: Color.bg, radius: 8, x: 0, y: 0)
+                            
                             Spacer()
                         }
-                            .padding()
-                            .padding([.vertical], 16)
-                    )
-                    .padding(32)
-                
-                Spacer()
-                
-//                ScrumsView()
-            }
+                        Spacer()
+                        HStack {
+                            Spacer()
+                            Rectangle()
+                                .overlay(
+                                    Image("narcan")
+                                        .resizable()
+                                        .cornerRadius(16)
+                                        .colorInvert()
+                                )
+                                .frame(width: 150, height: 110)
+                                .foregroundColor(Color.bg)
+                                .cornerRadius(16)
+                                .shadow(color: Color.bg, radius: 8, x: 0, y: 0)
+                            
+                            
+                            
+                            Spacer()
+                            Text("Administer narcan")
+                                .foregroundColor(Color.txt)
+                                .multilineTextAlignment(.center)
+                            Spacer()
+                        }
+                        Spacer()
+                    }
+                        .padding()
+                        .padding([.vertical], 16)
+                )
+                .padding(32)
+            
+            Spacer()
+            
         }
         .background(Color.bg)
     }

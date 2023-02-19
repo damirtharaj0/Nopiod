@@ -17,7 +17,6 @@ struct MapView: View {
         )
 
     var body: some View {
-        
         Map(coordinateRegion: $region)
     }
 }
@@ -38,3 +37,5 @@ class LocationDataManager : NSObject, CLLocationManagerDelegate {
 
    // Location-related properties and delegate methods.
 }
+
+
