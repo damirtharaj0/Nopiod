@@ -107,7 +107,7 @@ struct ChatBot: View {
                     .overlay(
                         VStack {
                             TextEditor(text: $textInput)
-                                .frame(height: 300)
+                                .frame(height: 100)
                                 .background(Color.card)
                                 .foregroundColor(Color.txt)
                             

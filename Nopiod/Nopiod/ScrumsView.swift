@@ -20,7 +20,7 @@ struct ScrumsView: View {
                 .tabItem {
                     Label("", systemImage: "map")
                 }
-            
+        
             ChatBot()
                 .tabItem {
                     Label("", systemImage: "message")

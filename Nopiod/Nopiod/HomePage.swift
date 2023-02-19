@@ -60,7 +60,6 @@ struct HomePage: View {
                     )
                 }
             }
-            .padding()
             
             Spacer()
             
