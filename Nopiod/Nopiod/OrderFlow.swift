@@ -23,7 +23,9 @@ extension View {
 }
 
 struct OrderFlow : View {
-    @State private var username: String = ""
+    @State private var name: String = ""
+    @State private var email: String = ""
+    @State private var address: String = ""
     
     var body: some View {
         VStack{
@@ -45,14 +47,15 @@ struct OrderFlow : View {
                                 .foregroundColor(Color.white)
                             Spacer()
                         }
-                        TextField("", text: $username)
-                            .placeholder(when: username.isEmpty) {
+                        TextField("", text: $name)
+                            .placeholder(when: name.isEmpty) {
                                 Text("Enter Full Name Here").foregroundColor(.txt)
                                     .foregroundColor(Color.txt)
                                     .background(Color.bg)
                                     .cornerRadius(2)
                             }
-//                        Spacer()
+                            .foregroundColor(Color.txt)
+                        //                        Spacer()
                     }
                     .padding([.horizontal], 32)
                     .padding([.vertical], 16)
@@ -65,14 +68,15 @@ struct OrderFlow : View {
                                 .foregroundColor(Color.white)
                             Spacer()
                         }
-                        TextField("", text: $username)
-                            .placeholder(when: username.isEmpty) {
+                        TextField("", text: $email)
+                            .placeholder(when: email.isEmpty) {
                                 Text("Enter Email Address Here").foregroundColor(.txt)
                                     .foregroundColor(Color.txt)
                                     .background(Color.bg)
                                     .cornerRadius(2)
                             }
-//                        Spacer()
+                            .foregroundColor(Color.txt)
+                        //                        Spacer()
                     }
                     .padding([.horizontal], 32)
                     .padding([.vertical], 16)
@@ -85,21 +89,20 @@ struct OrderFlow : View {
                                 .foregroundColor(Color.white)
                             Spacer()
                         }
-                        TextField("", text: $username)
-                            .placeholder(when: username.isEmpty) {
+                        TextField("", text: $address)
+                            .placeholder(when: address.isEmpty) {
                                 Text("Enter Shipping Address Here").foregroundColor(.txt)
                                     .foregroundColor(Color.txt)
                                     .background(Color.bg)
                                     .cornerRadius(2)
                             }
-//                        Spacer()
+                            .foregroundColor(Color.txt)
                     }
                     .padding([.horizontal], 32)
                     .padding([.vertical], 16)
                 }
                 Spacer()
                 Button {
-//                    showAlert = true
                 } label: {
                     Rectangle()
                         .fill(Color.card)
@@ -110,7 +113,6 @@ struct OrderFlow : View {
                             Text("Submit")
                                 .foregroundColor(.white)
                         )
-//                        .padding(.trailing).padding([.vertical], 20)
                 }
                 
             }

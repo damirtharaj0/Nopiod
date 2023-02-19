@@ -65,17 +65,17 @@
 		30136C3229A171FC0043800A /* Nopiod */ = {
 			isa = PBXGroup;
 			children = (
+				30136C3929A171FE0043800A /* Preview Content */,
+				30136C3729A171FE0043800A /* Assets.xcassets */,
+				30A4FBD129A20BF300B092B3 /* sos.gif */,
 				30136C3329A171FC0043800A /* NopiodApp.swift */,
 				30136C4329A172FF0043800A /* Color.swift */,
 				30FAA52229A18B8F00EE3AE8 /* ScrumsView.swift */,
 				30FAA52429A18D8E00EE3AE8 /* MapView.swift */,
-				30136C3729A171FE0043800A /* Assets.xcassets */,
-				3003FBD929A230C100F5099F /* OrderFlow.swift */,
-				30136C3929A171FE0043800A /* Preview Content */,
 				30136C4129A172CF0043800A /* HomePage.swift */,
 				30CAD83F29A1E12600EC621B /* ChatBot.swift */,
 				30A4FBCF29A20AE400B092B3 /* GifImage.swift */,
-				30A4FBD129A20BF300B092B3 /* sos.gif */,
+				3003FBD929A230C100F5099F /* OrderFlow.swift */,
 			);
 			path = Nopiod;
 			sourceTree = "<group>";
