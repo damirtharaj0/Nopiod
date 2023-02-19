@@ -28,9 +28,7 @@ struct ScrumsView: View {
                 .tabItem {
                     Label("", systemImage: "list.dash")
                 }
-                .tabItem {
-                    Label("", systemImage: "list.dash")
-                }
+                .navigationBarHidden(true)
         }
     }
     
